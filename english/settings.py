@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-n9l6eb8i(8o#+o21c*fabx&qd)$r(^3)%3m0r^c*jj)q$5#qib'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -85,15 +85,14 @@ DATABASES = {
         'USER': 'brayner',
         'PASSWORD': '1208',
         'HOST': '127.0.0.1',
-        'PORT': '3306',
-            
+        'PORT': '3306',        
     }
 }
 """
-DATABASES = {
-    'default': dj_database_url.config()
-}
 
+DATA_BASES = {
+        'default': dj_database_url.config()
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -137,5 +136,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 LOGOUT_REDIRECT_URL = 'index'
