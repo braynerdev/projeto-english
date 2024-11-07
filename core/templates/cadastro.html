@@ -1,4 +1,5 @@
 {% load bootstrap4 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
 </head>
 <body>
-    <div class="container">
+    <div class="mss">
         {% bootstrap_messages %}
-        <form action="{% url 'cadastro' %}" method="post" class="form" autocomplete="off" enctype="multipart/form-data">
-            {% csrf_token %}
-            {% bootstrap_form form %}
-            {% buttons %}
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-            {% endbuttons %}
-        </form>
     </div>
-
+    <form action="{% url 'cadastro' %}" method="post" class="form" autocomplete="off" enctype="multipart/form-data">
+        {% csrf_token %}
+            {% bootstrap_form form %}
+        {% buttons %}
+            <div class="bc">
+                <button type="submit" class="btn btn-secondary btn-lg">Cadastrar</button>
+            </div>
+        {% endbuttons %}
+    </form>    
     {% bootstrap_javascript jquery='full' %}
 </body>
 </html>

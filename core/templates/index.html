@@ -1,11 +1,52 @@
+{% load bootstrap4 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <a href="/cadastro"><button>clique aqui</button></a>
+    <div class="container">
+        <div class="header">
+            <a href="#">VOCABULARY</a>
+            |
+            <a href="#">WORKS</a>
+            |       
+            <a href="#">TEAM</a>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">WORD</th>
+                        <th scope="col">TRANSLATE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for c in palavras %}
+                        <tr>
+                            <td scope="row">{{ c.palavra }}</td>
+                            <td scope="row">{{ c.traducao }}</td>
+                        </tr>
+                    {% endfor %}  
+                </tbody>
+            </table>
+        </div>
+       
+        <div class="works">
+            <div class="title">WORKS</div>
+            arquivo power point
+        </div>
+
+        <div class="team">
+            time
+        </div>
+    </div>
+    {% bootstrap_javascript jquery='full' %}
 </body>
+
 </html>

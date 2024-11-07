@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, FormView
 from .forms import  CadastroModelForm
+from .models import Palavras
 from django.contrib import messages
 from django.urls import reverse_lazy
 
@@ -8,6 +9,7 @@ class IndexView(TemplateView):
     template_name = 'index.html'
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
+        context['palavras'] = Palavras.objects.all()
         return context
     
 class CadastroView(FormView):
