@@ -6,20 +6,28 @@ html, body{
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: center;
     background-image: linear-gradient(to bottom,#64748b,#475569,#334155,#1e293b ,#0f172a ,#020617);
     color: #94a3b8;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.mss{
+.container{
     display: flex;
-    align-items: start;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .bc{
     display: flex;
     justify-content: center;
 }
-button{
+.mss{
+    display: flex;
+    justify-content: center;
+}
+#bb{
     background-image: linear-gradient(to bottom,#64748b,#475569,#334155,#1e293b ,#0f172a ,#020617);
 }

@@ -1,0 +1,22 @@
+{% load static %}
+<div class="container">
+    <div class="works">
+        <div class="title">TRANSLATE</div>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">WORD</th>
+                    <th scope="col">TRANSLATE</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in palavras %}
+                    <tr>
+                        <td scope="row">{{ c.palavra }}</td>
+                        <td scope="row">{{ c.traducao }}</td>
+                    </tr>
+                {% endfor %}  
+            </tbody>
+        </table>
+    </div>
+</div>
