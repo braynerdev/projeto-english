@@ -6,7 +6,7 @@ html, body{
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom,#64748b,#475569,#334155,#1e293b ,#0f172a ,#020617);
+    background-color: #0f172a;
     color: #94a3b8;
     align-items: center;
     flex-wrap: wrap;
