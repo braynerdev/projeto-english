@@ -11,32 +11,50 @@ body{
     padding: 0;
     color: #94a3b8;
     display: flex;
-    height: 100vh;
-    width: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #0f172a;
-    gap: 600px;
+    background: linear-gradient(to bottom, #121212, #1f1f1f, #263238, #6a4c9c);
+    gap: 40px;
 }
 .container {
     display: flex;
-    height: max-content;
+    height: 100%;
     width: 100%;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
 }
+.container1 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.container3 {
+    display: flex;
+    height: max-content;
+    width: max-content;
+    flex-wrap: nowrap;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
 .header{
     display: flex;
-    height: 5%;
+    height: 100%;
     width:100%;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
-    position:fixed;
     top: 0;
-    z-index: 1000;
-    background-color: #334155;
+    font-size: large;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 300px;
 }
 .table{
     display: flex;
@@ -46,9 +64,12 @@ td, th{
     height: 100%;
     width: 300px;
     text-align: center;
-    border: 1px ,solid ,#0f172a;
-    background-color: #334155;
+    border: 1px ,solid ,#263238         ;
+    background-color: #6a4c9c;
     color: #94a3b8;
+}
+.a1:hover{
+    border-bottom: 5px solid rgba(255, 255, 255, 0.0);
 }
 
 .works{
@@ -56,13 +77,20 @@ td, th{
     width: 100%;
     height: max-content;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .title{
     display: flex;
     width: 100%;
     height: max-content;
-    font-size: 15vw;
+    font-size:5vh;
+    justify-content: center;
+}
+.title1{
+    display: flex;
+    width: max-content;
+    font-size:5vh;
     justify-content: center;
 }
 .team{
@@ -89,4 +117,37 @@ td, th{
     justify-content: space-between;
     width: max-content;
     height: 100%;
+}
+.card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    background-color:#334155;
+    color: #94a3b8;
+}
+.card-body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: -10px;
+}
+.card-title{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items:start;
+}
+.card-text{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: start;
+}
+.texto{
+    text-align: justify;
+    font-size:large;
 }

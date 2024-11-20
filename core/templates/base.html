@@ -16,11 +16,23 @@
 
 <body>
     <div class="header">
-        <a href="#">VOCABULARY</a>
-        |
-        <a href="#">WORKS</a>
-        |
-        <a href="#">TEAM</a>
+        <div class="title1">
+            <a href="{% url 'index' %}">@MEI</a>
+        </div>
+        <div class="container3">
+            <div class="a1">
+                <a href="#">STORY OF THE INTERNET</a>
+            </div>
+            <div class="a1">
+                <a href="#">VOCABULARY</a>
+            </div>
+            <div class="a1">
+                <a href="#">WORKS</a>
+            </div>
+            <div class="a1">
+                <a href="#">TEAM</a> 
+            </div>  
+        </div>
     </div>
 
     {% block content %} {% endblock %}
