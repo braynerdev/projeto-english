@@ -1,16 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-  
-<div class="container">
+<div class="container5">
+        <a href="#cabeca">
+            <button id="back">^</button>
+        </a>
+</div>
+
+<div id="historia" class="container1">
     {% include "historia.html" %}
 </div>
-<div class="container2">
+<div id="tradutor" class="container1">
     {% include "translate.html" %}
 </div>
-<div class="container">
+<div id="trabalhao" class="container1">
     {% include "works.html" %}
 </div>
-<div class="container2">
+<div id="time" class="container1">
     {% include "team.html" %}
 </div>
 

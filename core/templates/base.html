@@ -15,26 +15,25 @@
 </head>
 
 <body>
-    <div class="header">
+    <div id="cabeca" class="header">
         <div class="title1">
             <a href="{% url 'index' %}">@MEI</a>
         </div>
         <div class="container3">
             <div class="a1">
-                <a href="#">STORY OF THE INTERNET</a>
+                <a href="#historia">STORY OF THE INTERNET</a>
             </div>
             <div class="a1">
-                <a href="#">VOCABULARY</a>
+                <a href="#tradutor">VOCABULARY</a>
             </div>
             <div class="a1">
-                <a href="#">WORKS</a>
+                <a href="#trabalhao">WORKS</a>
             </div>
             <div class="a1">
-                <a href="#">TEAM</a> 
+                <a href="#time">TEAM</a>
             </div>  
         </div>
     </div>
-
     {% block content %} {% endblock %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

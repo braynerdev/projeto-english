@@ -11,21 +11,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="container">
-            <div class="mss">
-                {% bootstrap_messages %}
-            </div>  
-        </div>
-        <div class="container">
-            <form action="{% url 'cadastro' %}" method="post" class="form" autocomplete="off" enctype="multipart/form-data">
-                {% csrf_token %}
-                    {% bootstrap_form form %}
-                {% buttons %}
-                    <div class="bc">
-                        <button type="submit" id="bb" class="btn btn-secondary btn-lg">Cadastrar</button>
-                    </div>
-                {% endbuttons %}
-            </form>  
+        <div class="container1">
+            <div class="container1">
+                <div class="mss">
+                    {% bootstrap_messages %}
+                </div>
+            </div>
+            <div class="container1">
+                <form action="{% url 'cadastro' %}" method="post" class="form" autocomplete="off" enctype="multipart/form-data">
+                    {% csrf_token %}
+                        {% bootstrap_form form %}
+                    {% buttons %}
+                        <div class="bc">
+                            <button type="submit" id="bb" class="btn btn-secondary btn-lg">Cadastrar</button>
+                        </div>
+                    {% endbuttons %}
+                </form>
+            </div>
         </div>
     </div>
     {% bootstrap_javascript jquery='full' %}
